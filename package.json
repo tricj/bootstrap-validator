@@ -1,14 +1,14 @@
 {
-  "name": "bootstrap-validator",
-  "version": "0.11.8",
-  "description": "A user-friendly HTML5 Form validator for Bootstrap 3",
+  "name": "tric/bootstrap-validator",
+  "version": "0.11.9",
+  "description": "Customised version of bootstrap-validator to work with Bootstrap 4",
   "main": "js/validator.js",
   "scripts": {
     "test": "grunt test"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/1000hz/bootstrap-validator"
+    "url": "https://github.com/tricj/bootstrap-validator"
   },
   "keywords": [
     "bootstrap",
@@ -25,7 +25,7 @@
     "url": "http://opensource.org/licenses/MIT"
   }],
   "bugs": {
-    "url": "https://github.com/1000hz/bootstrap-validator/issues"
+    "url": "https://github.com/tricj/bootstrap-validator/issues"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
