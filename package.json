@@ -1,5 +1,5 @@
 {
-  "name": "tric/bootstrap-validator",
+  "name": "tric-bootstrap-validator",
   "version": "0.11.9",
   "description": "Customised version of bootstrap-validator to work with Bootstrap 4",
   "main": "js/validator.js",
