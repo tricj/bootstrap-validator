@@ -231,7 +231,7 @@
     var method = this.options.html ? 'html' : 'text'
     var errors = $el.data('bs.validator.errors')
     var $group = $el.closest('.form-group')
-    var $block = $group.find('.help-block.with-errors')
+    //var $block = $group.find('.help-block.with-errors')
     var $feedback = $group.find('.form-control-feedback')
 
     if (!errors.length) return
@@ -240,22 +240,22 @@
       .addClass('list-unstyled')
       .append($.map(errors, function (error) { return $('<li/>')[method](error) }))
 
-    $block.data('bs.validator.originalContent') === undefined && $block.data('bs.validator.originalContent', $block.html())
-    $block.empty().append(errors)
+    $feedback.data('bs.validator.originalContent') === undefined && $feedback.data('bs.validator.originalContent', $feedback.html())
+    $feedback.empty().append(errors)
     $group.addClass('has-error has-danger')
 
-    $group.hasClass('has-feedback')
-      && $feedback.removeClass(this.options.feedback.success)
-      && $feedback.addClass(this.options.feedback.error)
-      && $group.removeClass('has-success')
+    // $group.hasClass('has-feedback')
+    //   && $feedback.removeClass(this.options.feedback.success)
+    //   && $feedback.addClass(this.options.feedback.error)
+    //   && $group.removeClass('has-success')
   }
 
   Validator.prototype.clearErrors = function ($el) {
     var $group = $el.closest('.form-group')
-    var $block = $group.find('.help-block.with-errors')
+    //var $block = $group.find('.help-block.with-errors')
     var $feedback = $group.find('.form-control-feedback')
 
-    $block.html($block.data('bs.validator.originalContent'))
+    $feedback.html($feedback.data('bs.validator.originalContent'))
     $group.removeClass('has-error has-danger has-success')
 
     $group.hasClass('has-feedback')
